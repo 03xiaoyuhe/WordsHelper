@@ -1,5 +1,5 @@
-from llm_client import query_llm
-from word_model import Word
+from core.llm_client import query_llm
+from core.word_model import Word
 
 def story(words):
     prompt = f"""

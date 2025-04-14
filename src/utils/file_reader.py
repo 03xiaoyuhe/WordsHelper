@@ -1,7 +1,8 @@
 from tkinter import Tk, filedialog
 
 import core.word_model as m
-import helper as h
+
+import utils.helper as h
 
 
 def load_file():

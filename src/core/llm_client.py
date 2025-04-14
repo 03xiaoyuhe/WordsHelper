@@ -1,5 +1,5 @@
 from openai import OpenAI
-from settings import *
+from config.settings import *
 
 # 初始化客户端
 client = OpenAI(
