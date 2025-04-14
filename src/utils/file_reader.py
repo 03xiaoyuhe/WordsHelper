@@ -1,5 +1,6 @@
 from tkinter import Tk, filedialog
-import model as m
+
+import core.word_model as m
 import helper as h
 
 

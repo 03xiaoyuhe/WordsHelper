@@ -1,7 +1,8 @@
 from tkinter import Tk, filedialog
-from settings import *
 import os
 from datetime import datetime
+
+from config.settings import *
 
 def makefile(words: list, stories_with_summaries):
     """

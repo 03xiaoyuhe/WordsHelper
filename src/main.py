@@ -1,9 +1,9 @@
 import time
 import random
 
-from readWords import *
-from makeFile import makefile  # 引入 makefile 函数
-from mutiProcess import process_words_and_stories  # 引入多线程处理函数
+from utils.file_reader import load_file, group_words
+from utils.file_generator import makefile
+from utils.parallel import process_words_and_stories
 
 def main():
     # 加载单词文件

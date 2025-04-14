@@ -1,5 +1,5 @@
-from LLM import *
-import model as m
+from llm_client import query_llm
+from word_model import Word
 
 def story(words):
     prompt = f"""
@@ -40,7 +40,7 @@ def summary(story):
     return response
 
 
-def word(word : m.Word) -> m.Word:
+def word(word : Word) -> Word:
     """
     根据用户提供的单词生成短语、短语翻译、读音和词汇中文释义，并返回元组
     :param word: 用户提供的单词

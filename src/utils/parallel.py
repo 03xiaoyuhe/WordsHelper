@@ -1,7 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
-import function  # 引入 function 模块
+import core.word_processor as function
 
 def process_story_and_summary(words):
     """
