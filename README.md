@@ -29,7 +29,7 @@
    - 确保 `config.yml` 文件与程序主文件位于同一目录。
    - 运行以下命令启动程序：
      ```bash
-     python app.py
+     python src/main.py
      ```
 
 3. **操作流程**：
@@ -75,18 +75,19 @@ output_dir: "d:/FileDownload/Output"  # 生成结果文件的保存目录
 ---
 
 ## 文件结构
-```WordsHelper/
+```plaintext
+WordsHelper/
 ├── src/                   # 源代码目录
-│   ├── main.py            # 主程序入口（原 app.py）
+│   ├── main.py            # 主程序入口
 │   ├── utils/             # 工具模块目录
-│   │   ├── file_generator.py  # 文件生成工具（原 makeFile.py）
-│   │   ├── parallel.py        # 并行处理工具（原 mutiProcess.py）
-│   │   ├── file_reader.py     # 文件读取工具（原 readWords.py）
+│   │   ├── file_generator.py  # 文件生成工具
+│   │   ├── parallel.py        # 并行处理工具
+│   │   ├── file_reader.py     # 文件读取工具
 │   │   ├── helper.py          # 辅助工具函数
 │   ├── core/             # 核心逻辑目录
-│   │   ├── word_model.py      # 单词对象定义（原 model.py）
-│   │   ├── llm_client.py      # LLM API 客户端（原 LLM.py）
-│   │   ├── word_processor.py  # 单词处理逻辑（从 function.py 中拆分）
+│   │   ├── word_model.py      # 单词对象定义
+│   │   ├── llm_client.py      # LLM API 客户端
+│   │   ├── word_processor.py  # 单词处理逻辑
 │   ├── config/           # 配置相关目录
 │   │   ├── settings.py       # 配置加载模块
 │   │   ├── config.yml        # 配置文件
